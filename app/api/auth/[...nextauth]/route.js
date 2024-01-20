@@ -8,6 +8,7 @@ export const authOptions = {
       clientSecret: process.env.OAUTH_CLIENT_SECRET || "",
     }),
   ],
+  secret: process.env.SECRET || "",
 };
 
 const handler = NextAuth(authOptions);
